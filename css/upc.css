@@ -1,0 +1,30 @@
+a{
+    padding: 15px;
+    width: 50px;
+}
+img{
+    border-radius: 30%;
+    padding: 20px;
+}
+a1{
+    margin: 250px;
+    color: aliceblue;
+    font-size: xx-large;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.863);
+}
+footer{
+    /* margin: 200px 20px; */
+    color: aliceblue;
+    font-size: x-large;
+    float: left;
+    padding: 55px ;
+
+}
+button{
+    color: rgb(14, 16, 16);
+    background-color: rgb(240, 245, 243);
+    width: 80px; height: 30px;  border-radius: 8px;
+    float: right;
+}
