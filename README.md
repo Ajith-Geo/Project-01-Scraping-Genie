@@ -6,7 +6,7 @@ CONTRIBUTERS:
 2) Rahul
 3) Yogesh
 4) Ajith
-5) 
+   
 A Web scraping tool for E-Commerce websites Web Scraping Code Documentation The provided code is a web scraping script designed to extract information about products from different e-commerce websites, namely Amazon, Flipkart, and Reliance Digital. The script takes a product category and user input as input and returns a dictionary containing product information such as title, price, and image URL.
 
 The code utilizes the following libraries:
