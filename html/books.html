@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>books page</title>
+        <link rel="stylesheet" href="static/css/books.css">
+    </head>
+    <body>
+        <h1>Books Category</h1>
+        <hr>
+        
+        <form method="post" action="/books.html" id="books">
+            <p>Comments</p>
+            <label for="comm"></label>  
+            <textarea id="comm" name="user_input" row="4" cols="25" placeholder="Enter the Book name 
+ex:Harry Potter" required></textarea><br>
+            <br>
+            <br>
+            <input type="submit" value="submit">
+            <br>
+            <br>
+            <p1>Top Genres</p1>
+            <br>
+            <a><img src="static/images/b111.jpg" alt="Book" height="180px" width="170px"><br>Crime </a>
+            <a><img src="static/images/b222.jpg" alt="Book" height="180px" width="170px"><br>Horror</a>
+            <a><img src="static/images/b333.jpg" alt="Book" height="180px" width="170px"><br>Thriller</a>
+            <a><img src="static/images/b444.jpg" alt="Book" height="180px" width="170px"><br>Classic</a>
+            <a><img src="static/images/b555.jpg" alt="Book" height="180px" width="170px"><br>Love</a>
+            <a><img src="static/images/b666.jpg" alt="Book" height="180px" width="170px"><br>Fiction</a>
+            <a><img src="static/images/b777.jpg" alt="Book" height="180px" width="170px"><br>Fantasy</a>
+            <a><img src="static/images/b888.jpg" alt="Book" height="180px" width="170px"><br>Stories</a>
+        </form>
+
+        <!-- Back button -->
+        <footer>
+            <a href="http://127.0.0.1:5000/">
+                <button>Back</button>
+            </a>
+        </footer>
+        <!-- below is the js script to execute the submit button when the user hits 'ENTER' button on keyboard -->
+        <script>   
+            function handleSubmit(event) {
+               document.getElementById("books").submit();
+           }
+        
+           document.getElementById("books").addEventListener("keydown", function(event) {
+               if (event.key === "Enter") {
+                   handleSubmit(event); 
+               }
+         });
+        </script>
+    </body>
+</html>

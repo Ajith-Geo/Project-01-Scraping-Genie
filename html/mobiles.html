@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobiles Category</title>
+    <link rel="stylesheet" href="static/css/mobiles.css">
+</head>
+<body>
+    <h1>Mobiles Category</h1>
+    <hr>
+    <form id = 'mobiles' action="/mobiles.html" method="post">
+        <p>Specify:</p>
+        <label for="comm"></label>
+        <textarea id="comm" name="user_input" rows="4" cols="25" placeholder="Enter the device specifications 
+        ex:iphone 14 pro 256 Gb" required></textarea><br>
+        <br>
+        <br>
+        <input type="submit" value="Submit" name="Submit">
+        <br>        
+    </form>
+    <a><img src="static/images/p11.jpg" alt="apple" height="200px" width="190px"><br>iphone</a>
+    <a><img src="static/images/p22.jpg" alt="iphone" height="200px" width="210px"><br>Oneplus</a>
+    <a><img src="static/images/p77.jpg" alt="iphone" height="200px" width="210px"><br>Samsung</a>
+    
+    <a><img src="static/images/p44.jpg" alt="iphone" height="200px" width="220px"><br>Google Pixel</a>
+    <a><img src="static/images/p55.jpg" alt="iphone" height="200px" width="210px"><br>Xiaomi</a>
+    <a><img src="static/images/p66.jpg" alt="iphone" height="200px" width="210px"><br>Huawei</a>
+    <a><img src="static/images/p33.jpg" alt="iphone" height="200px" width="200px"><br>ROG</a>
+    <!-- <div>
+    {% if data %}
+    {% for platform, products in data.items() %}
+        <h2>{{ platform }}</h2>
+        <ul>
+            {% for product_id, product_info in products.items() %}
+                <li>
+                    <h3>{{ product_info['title'] }}</h3>
+                    <p>Price: {{ product_info['price'] }}</p>
+                    <img src="{{ product_info['image'] }}" alt="{{ product_info['title'] }}">
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    {% endif %}
+    </div> -->
+<script>   
+    function handleSubmit(event) {
+       document.getElementById("mobiles").submit();
+   }
+
+   document.getElementById("comm").addEventListener("keydown", function(event) {
+       if (event.key === "Enter") {
+           handleSubmit(event); 
+       }
+ });
+</script>
+</body>
+
+<br>
+<footer>
+    <a href="http://127.0.0.1:5000/">
+        <button>Back</button>
+    </a>
+</footer>
+</html>

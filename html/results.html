@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Results Page</title>
+    </head>
+    <body>
+        <div>
+            {% if data is not none %}
+                {% for platform, products in data.items() %}
+                    <center><h1>{{ platform }}</h1></center>
+                    {% if products is not none %}
+                        <ul>
+                            {% for product_id, product_info in products.items() %}
+                                <li>
+                                    <a href="{{ product_info['link'] }}">
+                                    <h3>{{ product_info['title'] }}</h3>
+                                    <p>Price: {{ product_info['price'] }} </p>
+                                    <img src="{{ product_info['image'] }}" alt="{{ product_info['title'] }}"></a>
+                                    <!-- <p>{{ product_info['hyper_link'] }}</p> -->
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No results found for {{ platform }}</p>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No results found</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
