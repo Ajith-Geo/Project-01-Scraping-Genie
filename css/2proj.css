@@ -8,6 +8,7 @@ h1{
     text-align:center;
     color: aliceblue;
     border-bottom: solid white ;
+    margin: 4px;
     text-shadow: 5px 4px 10px rgb(223, 19, 19),3px 3px 5px rgb(79, 138, 206);
 }
 h2{
@@ -21,87 +22,134 @@ h2{
     text-align:center;
     font-size:1.9em;
 } */
-a{
+.main{
    color: rgb(64, 64, 66);
-   font-size: 2em;
-   text-decoration: none;
-   text-shadow: 3px 2px 4px rgb(84, 82, 82), 2px 1.3px 4px rgb(185, 212, 104);
+   font-size: 1.9em;
+   font-weight: bolder;
+   font-display: center;
+   
+   text-shadow: 1.3px 1px 2px rgb(107, 106, 106), 1.3px 1px 2px rgb(155, 211, 231);
    /* text-align:end; */
    /* text-align: right ; */
    
 }
+/* #navbar {
+    color: rgb(64, 64, 66);
+   font-size: 1em;
+   text-decoration: none;
+   text-shadow: 3px 2px 4px rgb(84, 82, 82), 2px 1.3px 4px rgb(185, 212, 104);
+} */
 a:hover{
-    /* color: rgb(170, 162, 243);
-    font-size: 1.5em; */
+    
+    
     cursor: pointer;
-    font-size: 2.2em;
-    color: aliceblue ;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255) ;
     text-decoration: underline;
     
 }
-.navbar{
-    float: left;
-    padding: 40px 125px;
-    margin: 30px;
-}
-.navbar2{
-    float: left;
-    padding: 50px 47px;
-}
-.navbar3{
-    float: left;
-    padding: 30px 125px;
-}
-.navbar4{
-    float: left;
-    padding: 20px 30px;
-}
-/* a{
-    color: rgb(170, 162, 243);
-    font-size: 2em;
-    text-align: left;
-    
-    
-} */
-h3:hover{
-    color: rgb(93, 67, 188);
-    font-size: 1.6em;
-    cursor: pointer;
-}
+
 footer{
     margin: 230px 20px;
+    text-align: right;
 }
 h3{
-    color: red;
+    color: rgb(22, 115, 17);
     /* float: left; */
-    font-size: 1.5em;
+    font-size: 1.2em;
     /* padding: 70px 1300px; */
     float: right;
     text-align: right;
     /* padding: x; */
 }
-#box1{
-    float: right;
-    text-align: center;
-    font-style:italic;
-    font-size: 0.8em;
-    height: 220px;
-    width: 170px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 2px 3px 3px rgb(93, 91, 91);
-    /* padding: 10px 15px; */
-    margin: 10px 140px;
-    border-radius: 6%;
-}
-#box1 img{
-    border-radius: 15px;
-    padding: 2.5px;
-}
+/* 62, 143, 72 */
 footer a{
-    color: red;
-    font-size: 1.5em;
+    color: rgb(89,89,89);
+    font-size: 1.3em;
+    position: fixed;
+    right: 20;
+    bottom: 10;
+    /* transition: background-color 0.3s ease; */
+    /* float: left; */
+    /* margin: -75px; */
+}
+footer p{
+    color: rgb(89, 89, 89);
+    font-size: 1.2em;
+    position: fixed;
+    right: 20;
+    bottom: 10;
+    /* float: left; */
+    /* margin: -75px; */
 }
 footer a:hover{
     color: rgb(79, 107, 206);
     font-size: 1.4em;
+    
+}
+/* footer :hover{
+    color: rgb(79, 107, 206);
+    font-size: 1.4em; */
+
+.main{
+    /* position:fixed ;
+    bottom: 0; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    /* padding:100px 90px; */
+    text-decoration: none;
+}
+.main a{
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.main a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* .main .navbar {
+    border-radius: 10px;
+    flex: 2;
+    text-align: center;
+    margin: 10px 20px;
+} */
+img{
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.main #navbar{
+    font-size: 0.8em;
+    text-align: center;
+}
+/* footer{
+    background-color: yellow;
+} */
+#new {
+    text-align: center;
+    border-radius: 15px;
+}
+button{
+    border: 10px;
+}
+#new button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: hwb(147 40% 31%);
+    color: #fff;
+    border: none;
+    border-radius: 490%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* transition: background-color 0.3s ease; */
+}
+
+#new button:hover {
+    background-color: #11be6a;
+    color: rgb(54, 54, 54);
+
 }
