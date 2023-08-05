@@ -45,15 +45,17 @@ button{
     color: rgb(14, 16, 16);
     background-color: rgb(240, 245, 243);
     width: 80px; height: 30px;  border-radius: 8px;
-    float: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 button:hover{
     background-color: rgb(183, 180, 180);
     cursor: pointer;
 }
-footer{
+/* footer{
     margin: 230px 20px;
-}
+} */
 a{
     color: aliceblue;
     font-size: x-large;
@@ -62,4 +64,6 @@ a{
 }
 img{
     margin: 10px;
+    border-radius: 10px;
+    
 }
