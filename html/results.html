@@ -1,31 +1,62 @@
 <html>
-    <head>
-        <title>Results Page</title>
-    </head>
-    <body>
-        <div>
-            {% if data is not none %}
-                {% for platform, products in data.items() %}
-                    <center><h1>{{ platform }}</h1></center>
-                    {% if products is not none %}
-                        <ul>
+<head>
+    <title>Results Page</title>
+    <link rel="stylesheet" href="static/css/results.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        {% if data is not none %}
+            {% for platform, products in data.items() %}
+                <center><h1>{{ platform }}</h1></center>
+                {% if products is not none %}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                             {% for product_id, product_info in products.items() %}
-                                <li>
-                                    <a href="{{ product_info['link'] }}">
-                                    <h3>{{ product_info['title'] }}</h3>
-                                    <p>Price: {{ product_info['price'] }} </p>
-                                    <img src="{{ product_info['image'] }}" alt="{{ product_info['title'] }}"></a>
-                                    <!-- <p>{{ product_info['hyper_link'] }}</p> -->
-                                </li>
+                                {% if platform == "Amazon" %}
+                                    <tr class="amazon-product-row">
+                                {% elif platform == "Flipkart" %}
+                                    <tr class="flipkart-product-row">
+                                {% elif platform=="Reliance" %}
+                                    <tr class="reliance-product-row">
+                                {% elif platform=="Croma" %}
+                                <tr class="croma-product-row">
+                                {% endif %}
+                                    <td class="image-cell"><a href="{{ product_info['link'] }}" target="_blank"><img src="{{ product_info['image'] }}" alt="{{ product_info['title'] }}"></a></td>
+                                    <td>{{ product_info['title'] }}</td>
+                                    <td class="highlight-price"><p>Price: {{ product_info['price'] }}</p></td>
+                                    <td><a class="custom-link" href="{{ product_info['link'] }}" target="_blank">Buy Now</a></td>
+                                </tr>
                             {% endfor %}
-                        </ul>
-                    {% else %}
-                        <p>No results found for {{ platform }}</p>
-                    {% endif %}
-                {% endfor %}
-            {% else %}
-                <p>No results found</p>
-            {% endif %}
-        </div>
-    </body>
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p>Server busy on {{platform}}</p>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>No results found</p>
+        {% endif %}
+    </div>
+</body>
 </html>
