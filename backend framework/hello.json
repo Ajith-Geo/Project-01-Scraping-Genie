@@ -29,6 +29,16 @@
         {
             "base_url":"https://www.reliancedigital.in",
             "base_search_url":"https://www.reliancedigital.in/search?q="
+        },
+        "croma":
+        {
+            "base_url":"https://www.croma.com",
+            "base_search_url":"https://www.croma.com/searchB?q="
+        },
+        "jiomart":
+        {
+            "base_url":"https://www.flipkart.com",
+            "base_search_url":"https://www.flipkart.com/search?q="
         }
     },
 
@@ -48,6 +58,12 @@
         {
             "base_url":"https://www.reliancedigital.in",
             "base_search_url":"https://www.reliancedigital.in/search?q="
+        },
+
+        "croma":
+        {
+            "base_url":"https://www.croma.com",
+            "base_search_url":"https://www.croma.com/searchB?q="
         }
     },
 
@@ -76,6 +92,11 @@
         {
             "base_url":"https://www.flipkart.com",
             "base_search_url":"https://www.flipkart.com/search?q="
+        },
+        "croma":
+        {
+            "base_url":"https://www.croma.com",
+            "base_search_url":"https://www.croma.com/searchB?q="
         }
     },
 
