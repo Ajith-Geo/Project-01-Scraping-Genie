@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* .product-row.condition-4 {
+    background-color: greenyellow;
+    /* Add more styling properties */
+/* } */
+.amazon-product-row {
+    background-color: rgb(211, 200, 98);
+    /* Add more styling properties */
+}
+.amazon-product-row img{
+    width: 110px; height: 110px;
+}
+.flipkart-product-row {
+    background-color: #719adb;
+    size: 5px 5px;
+    /* Add more styling properties */
+}
+.flipkart-product-row img{
+    width: 110px; height: 110px;
+}
+.reliance-product-row {
+    background-color: rgb(223, 110, 110);
+    /* Add more styling properties */
+}
+.reliance-product-row img{
+    width: 110px; height: 110px;
+}
+.croma-product-row img{
+    width: 110px; height: 110px;
+}
+.croma-product-row {
+    background-color: rgb(113, 243, 146);
+    /* Add more styling properties */
+}
+center{
+    color: azure;
+}
+p{
+    color: white;
+    font-size: x-large;
+}
