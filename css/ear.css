@@ -68,9 +68,12 @@ button{
     color: rgb(14, 16, 16);
     background-color: rgb(240, 245, 243);
     width: 80px; height: 30px;  border-radius: 8px;
-    float: left;
+    /* float: left; */
     /* margin: 20px; */
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
+    position: fixed;
+    left: 30;
+    bottom: 30;
     
 }
 a{
