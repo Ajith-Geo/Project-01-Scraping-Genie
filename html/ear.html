@@ -6,9 +6,9 @@
     <body>
         <h1>Earphones Category</h1>
         
-        <form method="POST" action="/ear.html">
+        <form id="ear" method="POST" action="/ear.html">
             <p>Specify the Earphones</p>
-            <label for="comm"></label>  
+            <label for="ear"></label>  
             <textarea id="comm" row="4" name="user_input" cols="25" placeholder="enter the earphone details 
 ex:Boat Airdopes 141 " required></textarea><br>
             <br>
@@ -27,11 +27,21 @@ ex:Boat Airdopes 141 " required></textarea><br>
      <a><img src="static/images/e55.jpg" alt="earphones" height="180px" width="170px"><br>Headphones</a>
      <!-- <a><img src="/images/ear.jpg" alt="earphones" height="180px" width="170px"><br>Headphones</a> -->
      <!-- <a><img src="/images/ear.jpg" alt="earphones" height="160px" width="150px"><br>Headphones</a>   -->
-     
+    <script>   
+        function handleSubmit(event) {
+           document.getElementById("ear").submit();
+       }
+    
+       document.getElementById("comm").addEventListener("keydown", function(event) {
+           if (event.key === "Enter") {
+               handleSubmit(event); 
+           }
+     });
+    </script>
     </body>
     <footer>
         <br>
-        <a href="http://127.0.0.1:5000/">
+        <a href="http://127.0.0.1:5000/2proj.html">
         <button >Back</button>
     </a>
 </footer>
