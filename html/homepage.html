@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        #checkbox-label {
+            display: block;
+            margin-top: 20px;
+            size: 25px;
+        }
+        #checkbox-label input[type="checkbox"] {
+            transform: scale(1.5); /* Adjust the scale factor as needed */
+            margin-right: 10px; /* Add some spacing between checkbox and label */
+        }
+    </style>
+    <link rel="stylesheet" href="static/css/homepage.css">
+</head>
+<body>
+    <!-- <img id="logo" src="images\kesariya.jpg" alt="Logo"> -->
+    <form action="/2proj.html" method="get">
+        <label id="checkbox-label">
+            <input type="checkbox" name="human_confirmation" required>
+            Confirm you are not a robot 
+        </label>
+        <br>
+        <button type="submit">Continue to Website</button>
+    </form>
+</body>
+</html>
