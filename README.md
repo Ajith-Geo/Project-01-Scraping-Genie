@@ -3,9 +3,9 @@ A Web scraping tool for E-Commerce websites
 
 CONTRIBUTERS:
 1) Archith
-2) Rahul
-3) Yogesh
-4) Ajith
+2) Ajith
+3) Rahul
+4) Yogesh
 
 DEPENDANCIES to be installed:
 1) python
