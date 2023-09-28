@@ -8,9 +8,10 @@ CONTRIBUTERS:
 4) Ajith
 
 DEPENDANCIES to be installed:
-1) pip install requests
-2) pip install bs4
-3) pip install lxml
+1) python
+2) pip install requests
+3) pip install bs4
+4) pip install lxml
 
 A Web scraping tool for E-Commerce websites Web Scraping Code Documentation The provided code is a web scraping script designed to extract information about products from different e-commerce websites, namely Amazon, Flipkart, and Reliance Digital. The script takes a product category and user input as input and returns a dictionary containing product information such as title, price, and image URL.
 
