@@ -81,7 +81,7 @@ The code currently saves the scraped data in a dictionary with the website names
 
 The code does not handle exceptions and errors in depth. For robust production usage, it is essential to implement proper error handling to handle connection errors, parsing errors, or any unexpected responses from the websites.
 
-The provided code is functional but may require additional enhancements, validation checks, and error handling to make it production-ready and suitable for real-world use cases.
+The code is functional but may require additional enhancements, validation checks, and error handling to make it production-ready and suitable for real-world use cases.
 
 Conclusion: The web scraping code provided above demonstrates a basic implementation of scraping product information from three e-commerce websites (Amazon, Flipkart, Reliance Digital) based on user input. It utilizes Python's BeautifulSoup library and requests to fetch and parse HTML content from the websites.
 
