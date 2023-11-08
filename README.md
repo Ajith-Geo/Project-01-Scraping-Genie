@@ -1,12 +1,6 @@
 # Project-01-Scraping-Genie
 A Web scraping tool for E-Commerce websites
 
-CONTRIBUTERS:
-1) Archith
-2) Ajith
-3) Rahul
-4) Yogesh
-
 DEPENDANCIES to be installed:
 1) python
 2) pip install requests
