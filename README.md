@@ -1,6 +1,5 @@
 # Project-01-Scraping-Genie
 A Web scraping tool for E-Commerce websites
-![Uploading Screenshot 2023-12-28 090338.png…]()
 
 DEPENDANCIES to be installed:
 1) python
