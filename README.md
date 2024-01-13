@@ -7,7 +7,7 @@ DEPENDANCIES to be installed:
 3) pip install bs4
 4) pip install lxml
 
-A Web scraping tool for E-Commerce websites Web Scraping Code Documentation The provided code is a web scraping script designed to extract information about products from different e-commerce websites, namely Amazon, Flipkart, and Reliance Digital. The script takes a product category and user input as input and returns a dictionary containing product information such as title, price, and image URL.
+This web scraping project designed to extract information about products from different e-commerce websites, namely Amazon, Flipkart, and Reliance Digital. The script takes a product category and user input as input and returns a dictionary containing product information such as title, price, and image URL.
 
 The code utilizes the following libraries:
 
@@ -77,6 +77,6 @@ The code does not handle exceptions and errors in depth. For robust production u
 
 The code is functional but may require additional enhancements, validation checks, and error handling to make it production-ready and suitable for real-world use cases.
 
-Conclusion: The web scraping code provided above demonstrates a basic implementation of scraping product information from three e-commerce websites (Amazon, Flipkart, Reliance Digital) based on user input. It utilizes Python's BeautifulSoup library and requests to fetch and parse HTML content from the websites.
+Conclusion: The web scraping project above demonstrates a basic implementation of scraping product information from three e-commerce websites (Amazon, Flipkart, Reliance Digital) based on user input. It utilizes Python's BeautifulSoup library and requests to fetch and parse HTML content from the websites.
 
 It's important to note that web scraping may have legal and ethical implications. Before using web scraping for any purpose, make sure to review the terms of service of the target websites, comply with their rules, and be respectful of their resources and data. Additionally, ensure that the web scraping activity does not violate any laws or policies related to data privacy and usage. Always seek permission from website owners if necessary
